@@ -356,7 +356,7 @@ $showcloth&lt;br&gt;&lt;&lt;/nobr&gt;&gt;
     说着，老板从柜台下拿出一套裙摆过短的女仆装。
     “这已经是最大号的了，扯坏了你得自己出钱补。”
     
-    [[收下|一楼]]</tw-passagedata><tw-passagedata pid="22" name="“第二个”" tags="" position="525,300" size="100,100">&lt;&lt;set $job2 == 1&gt;&gt;
+    [[收下|一楼]]</tw-passagedata><tw-passagedata pid="22" name="“第二个”" tags="" position="525,300" size="100,100">&lt;&lt;set $job2 to 1&gt;&gt;
  老板大笑起来，“那好，二楼尽头那个房间就给你住了，80金一晚。”
     说着，老板从柜台下摸出一把钥匙。
     “休息的时候把红色的牌子挂到门把手上，工作的时候挂蓝色的，可别忘了。”
@@ -364,7 +364,7 @@ $showcloth&lt;br&gt;&lt;&lt;/nobr&gt;&gt;
 [[收下|一楼]]
 </tw-passagedata><tw-passagedata pid="23" name="首次离开" tags="" position="525,250" size="100,100">乌尔比安转身离开，老板在身后喊道，“改主意了随时回来找我。”
 
-[[小镇]]</tw-passagedata><tw-passagedata pid="24" name="&quot;我都能做&quot;" tags="" position="525,325" size="100,100">&lt;&lt;set $job1 == 1&gt;&gt;&lt;&lt;set $job2 == 1&gt;&gt;
+[[小镇]]</tw-passagedata><tw-passagedata pid="24" name="&quot;我都能做&quot;" tags="" position="525,325" size="100,100">&lt;&lt;set $job1 to 1&gt;&gt;&lt;&lt;set $job2 to 1&gt;&gt;
 老板盯着斗篷间隐约露出的肤色看了会儿，“也好，那你自己安排时间吧。”
     说着，老板从柜台下拿出一套裙摆过短的女仆装和一把钥匙。
     “休息就挂蓝色牌子，接活儿就挂红色的。要是忘了之后发生什么，我可不负责。”
@@ -372,13 +372,13 @@ $showcloth&lt;br&gt;&lt;&lt;/nobr&gt;&gt;
 [[收下|一楼]]</tw-passagedata><tw-passagedata pid="25" name="更衣室" tags="" position="825,225" size="100,100">乌尔比安走进一楼角落里的更衣室。
 至少他们有更衣室，他还不用当众脱下斗篷。
 
-&lt;&lt;if $job1 == 1&gt;&gt;
+&lt;&lt;if $job1 eq 1&gt;&gt;
 [[换上女仆装|换装][$cloth == 2]]
-&lt;&lt;elseif $job1 == 0&gt;&gt;
+&lt;&lt;elseif $job1 eq 0&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if $cloth == 2&gt;&gt;
+&lt;&lt;if $cloth eq 2&gt;&gt;
 [[换上战斗装|换装][$cloth == 1]]
-&lt;&lt;elseif $cloth == 1&gt;&gt;
+&lt;&lt;elseif $cloth eq 1&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 [[离开|一楼]]</tw-passagedata><tw-passagedata pid="26" name="二楼" tags="" position="725,375" size="100,100">二楼尽头的房间和其他的不太一样，空间要更大一些，摆着一张双人床。
 &lt;&lt;set $pai to 0&gt;&gt;
